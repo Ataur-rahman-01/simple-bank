@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple bank</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="login-area">
+      <h1 class="text-center">Welcome to simple bank</h1>
+      <div class="submit-area">
+        <h4>Log in</h4>
+        <br />
+        <input type="text" class="form-control" placeholder="Email" />
+        <br />
+        <input type="password" class="form-control" placeholder="Password" />
+        <br />
+        <button class="btn btn-success" id="log-in">Enter</button>
+      </div>
+    </div>
+    <div id="transation-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposit">
+            <h5>Deposit</h5>
+            <h2>$<span id="give-money">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdrow">
+            <h5>Withdrow</h5>
+            <h2>$ <span id="withdrow-money">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="blance">
+            <h5>Blance</h5>
+            <h2>$<span id="main-blance">1200</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Deposit</h4>
+            <input
+              type="text"
+              placeholder="$ amount deposite"
+              id="depositeAmount"
+            />
+            <br />
+            <br />
+            <button id="addDeposite" class="btn btn-success">deposit</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Withdrow</h4>
+            <input
+              type="text"
+              id="withdrowAmount"
+              placeholder="$ amount withdrow"
+            /><br /><br />
+            <button id="addWithdrow" class="btn btn-success">withdrow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
